@@ -1,0 +1,34 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Workshop1"
+include ':app'
+include ':core-utils'
+include ':core-network-api'
+include ':core-network-impl'
+include ':feature-products-api'
+include ':feature-products-impl'
+include ':feature-pdp-api'
+include ':feature-pdp-impl'
+include ':core-navigation-api'
+include ':core-navigation-impl'
+include ':feature-new-product-api'
+include ':feature-new-product-impl'
+include ':core-local-storage-api'
+include ':core-local-storage-impl'
+include ':core-recommendation'
+include ':core-product-recommendation-impl'
+include ':core-product-recommendation-api'
+include ':feature-profile-impl'
+include ':feature-profile-api'

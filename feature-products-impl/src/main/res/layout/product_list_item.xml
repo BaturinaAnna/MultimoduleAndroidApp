@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_normal"
+    android:layout_marginHorizontal="@dimen/margin_large"
+    android:layout_marginTop="@dimen/margin_large"
+    app:cardCornerRadius="@dimen/corner_radius"
+    app:cardElevation="@dimen/elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productImageRV"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/width_normal"
+            android:layout_height="@dimen/height_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nameTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_product_list_primary"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/productImageRV"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Яблоки" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/priceTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/productImageRV"
+            app:layout_constraintTop_toBottomOf="@id/nameTV"
+            tools:text="15P" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingView"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:isIndicator="true"
+            android:rating="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/productImageRV"
+            app:layout_constraintTop_toBottomOf="@id/priceTV" />
+
+        <ru.ozon.route256.feature_products_impl.presentation.view.custom_views.CartButton
+            android:id="@+id/cartButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:layout_margin="@dimen/margin_normal"
+            app:layout_constraintEnd_toEndOf="@+id/viewsCounterTV"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/viewsCounterTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:layout_margin="@dimen/margin_normal"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="1" />
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

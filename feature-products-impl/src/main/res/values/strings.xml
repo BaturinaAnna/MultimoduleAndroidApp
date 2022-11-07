@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rv_header_special_recommendation">Товары специально для вас</string>
+    <string name="rv_header_less_than_100">Товары дешевле 100 рублей</string>
+    <string name="rv_header_more_than_100">Товары дороже 100 рублей</string>
+    <string name="cart_button_title_not_in_cart">В корзину</string>
+    <string name="cart_button_title_in_cart">В корзине</string>
+    <string name="profile_title">Профиль</string>
+</resources>

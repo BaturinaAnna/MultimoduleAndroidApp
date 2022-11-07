@@ -1,0 +1,25 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+apply from: "../android-library.gradle"
+apply from: "../dependencies.gradle"
+
+dependencies {
+    implementation project(":core-network-api")
+    implementation project(":core-local-storage-api")
+
+    implementation material
+    implementation coreKtx
+    implementation appCompat
+    implementation viewModel
+    implementation lifecycle
+    implementation liveData
+    implementation fragment
+    implementation dagger
+    kapt daggerCompiler
+    implementation retrofit.values()
+}

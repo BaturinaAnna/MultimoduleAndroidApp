@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_normal">84dp</dimen>
+    <dimen name="height_large">280dp</dimen>
+
+    <dimen name="width_normal">84dp</dimen>
+
+    <dimen name="corner_radius">8dp</dimen>
+
+    <dimen name="elevation">8dp</dimen>
+
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+
+    <dimen name="text_size_pdp_primary">24sp</dimen>
+    <dimen name="text_size_pdp_additional">18sp</dimen>
+    <dimen name="text_size_product_list_primary">16sp</dimen>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/products_fragment">
+
+    <fragment
+        android:id="@+id/products_fragment"
+        android:name="ru.ozon.route256.feature_products_impl.presentation.view.ProductsFragment"
+        android:label="product_fragment_label">
+        <action
+            android:id="@+id/action_productsFragment_to_pdpFragment"
+            app:destination="@+id/pdp_fragment" />
+        <action
+            android:id="@+id/action_productsFragment_to_newProductFragment"
+            app:destination="@+id/new_product_fragment" />
+        <action
+            android:id="@+id/action_productsFragment_to_profileFragment"
+            app:destination="@+id/profile_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pdp_fragment"
+        android:name="ru.ozon.route256.feature_pdp_impl.presentation.view.PDPFragment"
+        android:label="pdp_fragment_label">
+    </fragment>
+
+    <fragment
+        android:id="@+id/new_product_fragment"
+        android:name="ru.ozon.route256.feature_new_product_impl.presentation.view.NewProductFragment"
+        android:label="new_product_fragment_label">
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="ru.ozon.route256.feature_profile.presentation.view.ProfileFragment"
+        android:label="profile_fragment_label">
+    </fragment>
+
+</navigation>

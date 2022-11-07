@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="regions_array">
+        <item>Центральный</item>
+        <item>Северо-Западный</item>
+        <item>Приволжский</item>
+        <item>Южный</item>
+        <item>Северо-Кавказский</item>
+        <item>Уральский</item>
+        <item>Сибирский</item>
+        <item>Дальне-Восточный</item>
+    </string-array>
+</resources>

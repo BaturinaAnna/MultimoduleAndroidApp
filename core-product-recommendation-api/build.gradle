@@ -1,0 +1,15 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+apply from: "../android-library.gradle"
+apply from: "../dependencies.gradle"
+
+dependencies {
+    implementation dagger
+    kapt daggerCompiler
+    implementation liveData
+}

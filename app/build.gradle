@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-android'
+}
+
+apply from: "../android-library.gradle"
+apply from: "../dependencies.gradle"
+
+android {
+    defaultConfig {
+        applicationId "ru.ozon.route256.homework2"
+    }
+}
+
+dependencies {
+    implementation project(":core-network-api")
+    implementation project(":core-network-impl")
+    implementation project(":core-local-storage-api")
+    implementation project(":core-local-storage-impl")
+    implementation project(":core-utils")
+    implementation project(":feature-products-api")
+    implementation project(":feature-products-impl")
+    implementation project(":feature-pdp-api")
+    implementation project(":feature-pdp-impl")
+    implementation project(":feature-new-product-api")
+    implementation project(":feature-new-product-impl")
+    implementation project(":core-navigation-api")
+    implementation project(":core-navigation-impl")
+    implementation project(":core-product-recommendation-api")
+    implementation project(":core-product-recommendation-impl")
+
+    implementation coreKtx
+    implementation navigation.values()
+    implementation appCompat
+    implementation material
+    implementation constraintLayout
+    implementation viewModel
+    implementation lifecycle
+    implementation liveData
+    implementation glide
+    implementation workers.values()
+    implementation room
+    kapt roomCompiler
+    implementation dagger
+    kapt daggerCompiler
+}
